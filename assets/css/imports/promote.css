@@ -1,0 +1,50 @@
+.promote-container {
+  background: var(--green-400);
+  padding: 8px;
+}
+
+.promote {
+  font-family: var(--font-exo);
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: var(--green-800);
+  text-align: center;
+  margin-left: 120px;
+  animation: revealPromote 0.5s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.promote a {
+  color: var(--green-800);
+}
+
+@media (max-width: 600px) {
+  .promote {
+    font-size: 14px;
+    animation: revealPromoteMobile 0.5s forwards;
+  }
+}
+
+@keyframes revealPromote {
+  from {
+    margin-left: 220px;
+  }
+
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes revealPromoteMobile {
+  from {
+    margin-left: 60px;
+  }
+
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
