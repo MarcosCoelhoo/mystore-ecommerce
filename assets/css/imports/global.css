@@ -7,8 +7,8 @@
 
   --brown-100: #f3eee1;
 
-  --font-exo: 'Exo 2', sans-serif;
-  --font-public: 'Public Sans', sans-serif;
+  --font-exo: "Exo 2", sans-serif;
+  --font-public: "Public Sans", sans-serif;
 }
 
 * {
@@ -17,9 +17,18 @@
   box-sizing: border-box;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+}
+
+body {
+  background: var(--brown-100);
+}
+
+img {
+  width: 100%;
 }

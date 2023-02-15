@@ -6,22 +6,62 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="shortcut icon" href="./assets/icons/ico.svg" type="image/x-icon">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>MyStore</title>
+  <script type="module" src="./assets/js/script.js" defer></script>
+  <title>MyStore | Seu Ecommerce Online</title>
 </head>
 
 <body>
   <div class="promote-container">
-    <h2 class="promote">Bermudas Masculinas 50% Off |<a href="#">Aproveite Agora</a></h2>
+    <h2 class="promote">Bermudas Masculinas 50% Off | <a href="#">Aproveite Agora</a></h2>
   </div>
   <header>
-    
+    <div class="header-logo">
+      <img src="./assets/icons/logo.svg" alt="MyStore logo">
+    </div>
+
+    <div class="header-content">
+      <div class="search">
+        <input type="text" name="search" id="search" placeholder='Pesquise por um produto'>
+        <label for="search"><span class="material-symbols-rounded">
+            search
+          </span></label>
+      </div>
+
+      <nav>
+        <div class="nav-link-container" data-menu="container">
+          <a href="#" class="nav-link cart">
+            <span data-count="20" class="icon material-symbols-rounded">
+              shopping_cart
+            </span>
+            <p>Carrinho</p>
+          </a>
+          <a href="#" class="nav-link account">
+            <span class="icon material-symbols-rounded">
+              person
+            </span>
+            <p>Conta</p>
+          </a>
+        </div>
+
+        <div class="menu" data-menu="button">
+          <span class="icon material-symbols-rounded">
+            menu
+          </span>
+        </div>
+      </nav>
+    </div>
+
   </header>
 </body>
 
