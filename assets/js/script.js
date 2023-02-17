@@ -1,3 +1,7 @@
-import initMenuMobile from "./modules/menu-mobile.js";
+import MenuMobile from "./modules/menu-mobile.js";
 
-initMenuMobile();
+const menuMobile = new MenuMobile(
+  '[data-menu="button"]',
+  '[data-menu="container"]'
+);
+menuMobile.init();

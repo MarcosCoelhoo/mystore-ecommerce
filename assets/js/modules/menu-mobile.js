@@ -1,12 +1,17 @@
-export default function initMenuMobile() {
-  const buttonMenu = document.querySelector('[data-menu="button"]');
+export default class MenuMobile {
+  constructor(button, container) {
+    this.menuButton = document.querySelector(button);
+    this.containerMenu = document.querySelector(container);
 
-  function menuMobile() {
-    const containerMenu = document.querySelector('[data-menu="container"]');
-
-    containerMenu.classList.toggle("active");
-    buttonMenu.classList.toggle("active");
+    this.menuMobile = this.menuMobile.bind(this);
   }
 
-  buttonMenu.addEventListener("click", menuMobile);
+  menuMobile() {
+    this.containerMenu.classList.toggle("active");
+    this.menuButton.classList.toggle("active");
+  }
+
+  init() {
+    this.menuButton.addEventListener("click", this.menuMobile);
+  }
 }

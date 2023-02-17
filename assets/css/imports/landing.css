@@ -1,0 +1,47 @@
+.landing-container {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.landing-container .landing-image {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 10s slide infinite;
+}
+
+.landing-container .landing-image img {
+  width: 100vw;
+  float: left;
+}
+
+@keyframes slide {
+  0% {
+    left: 0vw;
+  }
+  20% {
+    left: 0vw;
+  }
+  25% {
+    left: -100vw;
+  }
+  45% {
+    left: -100vw;
+  }
+  50% {
+    left: -200vw;
+  }
+  70% {
+    left: -200vw;
+  }
+  75% {
+    left: -300vw;
+  }
+  95% {
+    left: -300vw;
+  }
+  100% {
+    left: 0vw;
+  }
+}
