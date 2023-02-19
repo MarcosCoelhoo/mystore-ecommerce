@@ -1,7 +1,10 @@
 header {
-  padding: 32px 64px;
   display: flex;
   justify-content: space-between;
+}
+
+.header-logo img {
+  width: 100%;
 }
 
 header .header-content {
@@ -86,12 +89,6 @@ nav .menu {
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
-  header {
-    padding: 16px 32px;
-  }
-}
-
 @media (max-width: 600px) {
   header .header-logo {
     max-width: 124px;
@@ -109,6 +106,7 @@ nav .menu {
     display: none;
     position: absolute;
     top: 50px;
+    z-index: 100;
   }
 
   nav .menu.active {

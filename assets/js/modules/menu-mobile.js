@@ -2,8 +2,6 @@ export default class MenuMobile {
   constructor(button, container) {
     this.menuButton = document.querySelector(button);
     this.containerMenu = document.querySelector(container);
-
-    this.menuMobile = this.menuMobile.bind(this);
   }
 
   menuMobile() {
@@ -12,6 +10,8 @@ export default class MenuMobile {
   }
 
   init() {
-    this.menuButton.addEventListener("click", this.menuMobile);
+    this.menuButton.addEventListener("click", () => {
+      this.menuMobile();
+    });
   }
 }
