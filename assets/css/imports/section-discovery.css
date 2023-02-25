@@ -1,0 +1,99 @@
+.discovery {
+  background: var(--green-500);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.discovery .discovery-title {
+  font-family: var(--font-exo);
+  font-size: 4rem;
+  color: var(--brown-100);
+  text-align: center;
+}
+
+.discovery .discovery-subtitle {
+  font-family: var(--font-public);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--green-800);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.discovery .discovery-list {
+  display: flex;
+  gap: 32px;
+}
+
+.discovery .discovery-list .list-item {
+  max-width: fit-content;
+  position: relative;
+  box-shadow: 0 2px 3px rgba(34, 67, 50, 55%);
+  border-radius: 8px;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.discovery .discovery-list .list-item:hover {
+  outline: 3px solid var(--green-400);
+}
+
+.discovery .list-item .item-image {
+  max-width: 242px;
+  height: 100%;
+}
+
+.discovery .list-item .item-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.discovery .item-title-container {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  border-radius: 0 0 8px 8px;
+  padding: 8px;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.item-title-container .item-title {
+  font-family: var(--font-exo);
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--brown-100);
+}
+
+@media (max-width: 900px) {
+  .discovery .discovery-title {
+    font-size: 2.625rem;
+  }
+
+  .discovery .discovery-subtitle {
+    font-size: 1rem;
+  }
+
+  .item-title-container .item-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .discovery .discovery-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .discovery .list-item .item-image {
+    max-width: 144px;
+  }
+
+  .item-title-container .item-title {
+    font-size: 1rem;
+  }
+}
