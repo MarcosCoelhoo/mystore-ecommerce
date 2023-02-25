@@ -10,6 +10,8 @@
   display: flex;
   gap: 16px;
   overflow-x: scroll;
+  scroll-behavior: smooth;
+
   /* padding para afastar os produtos da borda assim aparecendo a sombra  */
   padding: 2px;
 }
@@ -65,10 +67,11 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .list-products .product:hover {
-  box-shadow: 0 5px 3px rgba(34, 67, 50, 25%);
+  box-shadow: 0 10px 15px rgba(34, 67, 50, 55%);
 }
 
 .product .favorite {
@@ -151,19 +154,36 @@
 
 @media (max-width: 600px) {
   .section-products .section-title {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 24px;
+  }
+
+  .list-products .product {
+    max-width: 136px;
+  }
+
+  .product .favorite .icon {
+    font-size: 1rem;
+  }
+
+  .product .content .footer {
+    gap: 16px;
+  }
+
+  .product .category {
+    font-size: 0.625rem;
   }
 
   .product .name {
     font-size: 0.875rem;
+    width: 11ch;
   }
 
   .footer .price {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 
   .footer .cart-button .icon {
-    font-size: 1.125rem;
+    font-size: 0.875rem;
   }
 }
