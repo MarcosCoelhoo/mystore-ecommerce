@@ -10,7 +10,6 @@
   display: flex;
   gap: 16px;
   overflow-x: scroll;
-  margin-bottom: 60px;
   /* padding para afastar os produtos da borda assim aparecendo a sombra  */
   padding: 2px;
 }
@@ -62,7 +61,7 @@
   background: var(--brown-100);
   box-shadow: 0 2px 3px rgba(34, 67, 50, 25%);
   border-radius: 4px;
-  max-width: 184px;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -110,6 +109,11 @@
   font-weight: 700;
   text-transform: capitalize;
   color: var(--green-500);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 17ch;
+  word-break: break-all;
 }
 
 .content .footer {
