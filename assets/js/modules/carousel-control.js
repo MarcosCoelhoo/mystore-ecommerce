@@ -3,7 +3,6 @@ export default function initCarouselControl(idSection, parentListProducts) {
     `${idSection} [data-control]`
   );
   const listCarousel = parentListProducts.querySelectorAll(`.product`);
-  console.log(listCarousel);
 
   let currentItem = 0;
 
@@ -24,17 +23,10 @@ export default function initCarouselControl(idSection, parentListProducts) {
       currentItem = max - 1;
     }
 
-    // listCarousel.forEach((item) => item.classList.remove("active"));
-
-    console.log("currentItem:", currentItem);
-
     listCarousel[currentItem].scrollIntoView({
-      behavior: "smooth",
       inline: "center",
       block: "center",
     });
-
-    // listCarousel[currentItem].classList.add("active");
   }
 
   controlsCarousel.forEach((control) => {

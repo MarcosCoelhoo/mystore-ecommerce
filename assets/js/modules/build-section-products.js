@@ -34,7 +34,7 @@ export default function initBuildSection(idSection, productObjData, imgUrl) {
              <h3 class="name">${title}</h3>
            </div>
            <div class="footer">
-             <h4 class="price">R$${price}</h4>
+             <h4 class="price">R$${price.toFixed(2)}</h4>
              <div class="cart-button">
                <span class="icon material-symbols-rounded">
                  add_shopping_cart

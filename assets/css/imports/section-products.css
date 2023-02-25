@@ -10,6 +10,7 @@
   display: flex;
   gap: 16px;
   overflow-x: scroll;
+  scroll-behavior: smooth;
   /* padding para afastar os produtos da borda assim aparecendo a sombra  */
   padding: 2px;
 }
