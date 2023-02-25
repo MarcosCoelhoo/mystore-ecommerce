@@ -1,43 +1,43 @@
-export default class CarouselControl {
-  constructor(controls, list) {
-    this.controls = document.querySelectorAll(controls);
-    this.listCarousel = document.querySelectorAll(list);
-    this.currentItem = 0;
-  }
+export default function initCarouselControl(idSection, parentListProducts) {
+  const controlsCarousel = document.querySelectorAll(
+    `${idSection} [data-control]`
+  );
+  const listCarousel = parentListProducts.querySelectorAll(`.product`);
+  console.log(listCarousel);
 
-  handleCarousel({ target }) {
-    const max = this.listCarousel.length;
+  let currentItem = 0;
+
+  function handleCarousel({ target }) {
+    const max = listCarousel.length;
 
     if (target.dataset.control === "right") {
-      this.currentItem += 2;
+      currentItem += 2;
     } else {
-      this.currentItem -= 2;
+      currentItem -= 2;
     }
 
-    if (this.currentItem >= max) {
-      this.currentItem = 0;
+    if (currentItem >= max) {
+      currentItem = 0;
     }
 
-    if (this.currentItem < 0) {
-      this.currentItem = max - 1;
+    if (currentItem < 0) {
+      currentItem = max - 1;
     }
 
-    this.listCarousel[this.currentItem].scrollIntoView({
+    // listCarousel.forEach((item) => item.classList.remove("active"));
+
+    console.log("currentItem:", currentItem);
+
+    listCarousel[currentItem].scrollIntoView({
       behavior: "smooth",
       inline: "center",
       block: "center",
     });
+
+    // listCarousel[currentItem].classList.add("active");
   }
 
-  addEventInControls() {
-    this.controls.forEach((control) => {
-      control.addEventListener("click", (event) => {
-        this.handleCarousel(event);
-      });
-    });
-  }
-
-  init() {
-    this.addEventInControls();
-  }
+  controlsCarousel.forEach((control) => {
+    control.addEventListener("click", handleCarousel);
+  });
 }

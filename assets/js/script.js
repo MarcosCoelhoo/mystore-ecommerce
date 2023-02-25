@@ -1,5 +1,7 @@
 import MenuMobile from "./modules/menu-mobile.js";
-import CarouselControl from "./modules/carousel-control.js";
+import initFetchSectionRecommended from "./modules/fetch-section-recommended.js";
+import initFetchSectionSmartwatches from "./modules/fetch-section-smartwatches.js";
+import initFetchSectionShoes from "./modules/fetch-section-shoes.js";
 
 const menuMobile = new MenuMobile(
   '[data-menu="button"]',
@@ -7,8 +9,6 @@ const menuMobile = new MenuMobile(
 );
 menuMobile.init();
 
-const carouselControl = new CarouselControl(
-  "[data-control]",
-  ".list-products .product"
-);
-carouselControl.init();
+initFetchSectionRecommended();
+initFetchSectionSmartwatches();
+initFetchSectionShoes();
