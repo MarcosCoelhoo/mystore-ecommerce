@@ -30,7 +30,7 @@ export default function initBuildSection(idSection, productObjData, imgUrl) {
  
          <div class="content">
            <div class="description">
-             <span class="category">${category}</span>
+             <p class="category">${category}</p>
              <h3 class="name">${title}</h3>
            </div>
            <div class="footer">
