@@ -13,7 +13,9 @@
 
 .landing-container .landing-image img {
   width: 100vw;
+  height: 100%;
   float: left;
+  object-fit: cover;
 }
 
 @keyframes slide {
@@ -43,5 +45,11 @@
   }
   100% {
     left: 0vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .landing-container .landing-image {
+    height: 250px;
   }
 }
