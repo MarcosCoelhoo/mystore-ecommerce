@@ -4,7 +4,7 @@
 }
 
 .promote {
-  font-family: var(--font-exo);
+  font-family: var(--font-primary);
   font-weight: 700;
   font-size: 1rem;
   text-transform: capitalize;

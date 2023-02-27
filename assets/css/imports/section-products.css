@@ -1,5 +1,5 @@
 .section-products .section-title {
-  font-family: var(--font-exo);
+  font-family: var(--font-primary);
   font-size: 2rem;
   font-weight: 700;
   color: var(--green-800);
@@ -30,7 +30,7 @@
 }
 
 .control-container .control {
-  background: var(--brown-100);
+  background: var(--white);
   opacity: 0.2;
   width: fit-content;
   padding: 8px;
@@ -60,7 +60,7 @@
 
 .list-products .product {
   position: relative;
-  background: var(--brown-100);
+  background: var(--white);
   box-shadow: 0 2px 3px rgba(34, 67, 50, 25%);
   border-radius: 4px;
   width: fit-content;
@@ -78,7 +78,7 @@
   position: absolute;
   right: 8px;
   top: 8px;
-  background: var(--brown-100);
+  background: var(--white);
   color: var(--green-400);
   display: flex;
   padding: 4px;
@@ -94,7 +94,7 @@
 
 .product .content {
   padding: 8px;
-  font-family: var(--font-public);
+  font-family: var(--font-secondary);
 }
 
 .content .description {
@@ -133,7 +133,7 @@
 
 .footer .cart-button {
   background: var(--green-800);
-  color: var(--brown-100);
+  color: var(--white);
   padding: 6px 7px;
   display: flex;
   border-radius: 50%;

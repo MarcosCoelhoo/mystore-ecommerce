@@ -12,7 +12,7 @@ header .header-content {
   gap: 16px;
   justify-content: end;
   align-items: center;
-  font-family: var(--font-public);
+  font-family: var(--font-secondary);
   width: 100%;
 }
 
@@ -71,10 +71,10 @@ nav .nav-link:hover {
 .cart .icon::after {
   content: attr(data-count);
   display: block;
-  font-family: var(--font-public);
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-size: 8px;
-  color: var(--brown-100);
+  color: var(--white);
   background: var(--green-800);
   padding: 4px;
   border-radius: 50%;
@@ -125,7 +125,7 @@ nav .menu {
   }
 
   nav .nav-link-container.active .nav-link {
-    color: var(--brown-100);
+    color: var(--white);
   }
 
   nav .nav-link-container.active .nav-link:focus {
