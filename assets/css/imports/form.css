@@ -1,0 +1,72 @@
+.section-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-form .form-title {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--green-800);
+  text-align: center;
+}
+
+.section-form .form-subtitle {
+  font-family: var(--font-secondary);
+  font-size: 0.875rem;
+  color: var(--grey);
+  margin-bottom: 16px;
+}
+
+.section-form .form-box {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid var(--green-500);
+  border-radius: 8px;
+  width: 70%;
+  padding-left: 16px;
+}
+
+.form-box .form-input {
+  width: 100%;
+  height: 32px;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.form-box .form-button {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  background: var(--green-600);
+  padding: 0 16px;
+  border-radius: 0 6px 6px 0;
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-box .form-button:hover {
+  background: var(--green-800);
+}
+@media (max-width: 800px) {
+  .section-form .form-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-form .form-title {
+    font-size: 1rem;
+  }
+
+  .section-form .form-subtitle {
+    font-size: 0.75rem;
+  }
+
+  .section-form .form-box {
+    width: 90%;
+  }
+}

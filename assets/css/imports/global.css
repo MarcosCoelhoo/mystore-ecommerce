@@ -5,6 +5,8 @@
   --green-400: #66a17d;
   --green-300: #94c1a4;
 
+  --grey: #666666;
+
   --white: #efefef;
 
   --font-primary: "Rubik", sans-serif;
@@ -32,6 +34,13 @@ body {
 button {
   border: none;
   outline: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 300px;
 }
 
 .padding-default {
