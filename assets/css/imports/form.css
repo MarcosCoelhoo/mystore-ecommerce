@@ -1,10 +1,11 @@
-.section-form {
+.footer-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 64px;
 }
 
-.section-form .form-title {
+.footer-form .form-title {
   font-family: var(--font-primary);
   font-size: 2rem;
   font-weight: 600;
@@ -13,19 +14,19 @@
   text-align: center;
 }
 
-.section-form .form-subtitle {
+.footer-form .form-subtitle {
   font-family: var(--font-secondary);
   font-size: 0.875rem;
   color: var(--grey);
   margin-bottom: 16px;
 }
 
-.section-form .form-box {
+.footer-form .form-box {
   display: flex;
   justify-content: space-between;
   border: 2px solid var(--green-500);
   border-radius: 8px;
-  width: 70%;
+  width: 50%;
   padding-left: 16px;
 }
 
@@ -40,6 +41,7 @@
 .form-box .form-button {
   font-family: var(--font-primary);
   font-weight: 700;
+  text-transform: uppercase;
   background: var(--green-600);
   padding: 0 16px;
   border-radius: 0 6px 6px 0;
@@ -52,21 +54,21 @@
   background: var(--green-800);
 }
 @media (max-width: 800px) {
-  .section-form .form-title {
+  .footer-form .form-title {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 600px) {
-  .section-form .form-title {
+  .footer-form .form-title {
     font-size: 1rem;
   }
 
-  .section-form .form-subtitle {
+  .footer-form .form-subtitle {
     font-size: 0.75rem;
   }
 
-  .section-form .form-box {
+  .footer-form .form-box {
     width: 90%;
   }
 }
