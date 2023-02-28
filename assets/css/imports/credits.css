@@ -12,7 +12,7 @@
 }
 
 .credits p a {
-  color: var(--green-800);
+  color: #010101;
 }
 
 @media (max-width: 600px) {

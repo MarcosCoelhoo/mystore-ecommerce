@@ -15,7 +15,18 @@
   font-weight: 600;
   font-size: 1.3125rem;
   color: var(--green-500);
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.footer-links .links-box .links-title::before {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background: currentColor;
+  display: inline-block;
+  position: absolute;
+  bottom: -3px;
 }
 
 .footer-links .links-box .links-content {
