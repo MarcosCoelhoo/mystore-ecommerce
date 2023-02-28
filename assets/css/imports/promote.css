@@ -22,7 +22,7 @@
 
 @media (max-width: 600px) {
   .promote {
-    font-size: 14px;
+    font-size: 0.75rem;
     animation: revealPromoteMobile 0.5s forwards;
   }
 }

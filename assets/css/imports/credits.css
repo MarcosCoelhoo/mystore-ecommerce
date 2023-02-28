@@ -10,3 +10,13 @@
   text-align: center;
   color: var(--white);
 }
+
+.credits p a {
+  color: var(--green-800);
+}
+
+@media (max-width: 600px) {
+  .credits p {
+    font-size: 0.75rem;
+  }
+}
