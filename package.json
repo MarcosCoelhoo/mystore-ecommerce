@@ -2,7 +2,7 @@
   "name": "mystore-ecommerce",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "./main.js",
   "scripts": {
     "dev": "webpack --mode development --watch --entry ./assets/js/script.js -o ./",
     "build": "webpack --mode production --entry ./assets/js/script.js -o ./"
